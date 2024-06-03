@@ -13,6 +13,11 @@ a {
   text-decoration: none;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
 body .container .h-container {
     border-style: hidden;
     border-color: green;
