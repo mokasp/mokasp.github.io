@@ -88,6 +88,7 @@ body .container .main {
 body .container .main::-webkit-scrollbar {
   width: 0;
   background: transparent;
+  display: none;
 }
 
 body .container .main .main-inner {
