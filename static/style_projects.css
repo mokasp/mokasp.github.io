@@ -85,7 +85,7 @@ body .container .main {
     overflow: auto;
 }
 
-body .container .main::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0;
   background: transparent;
   display: none;
