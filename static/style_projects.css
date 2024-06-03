@@ -82,7 +82,7 @@ body .container .main {
     justify-content: center;
     align-items: center;
     margin-top: -2%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 body .container .main .main-inner {
