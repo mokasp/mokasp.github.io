@@ -84,7 +84,7 @@ body .container .main {
     justify-content: center;
     align-items: center;
     margin-top: -2%;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 body .container .main::-webkit-scrollbar {
