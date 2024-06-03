@@ -86,6 +86,12 @@ body .container .main {
     margin-top: -2%;
     overflow: scroll;
 }
+
+body .container .main::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
 body .container .main .main-inner {
     border-style: hidden;
     border-color: purple;
