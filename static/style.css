@@ -13,15 +13,6 @@ a {
   text-decoration: none;
 }
 
-body::-webkit-scrollbar {
-  width: 0; /* Set the width of the scrollbar to 0 */
-  background: transparent; /* Make the background of the scrollbar transparent */
-}
-
-body .main::-webkit-scrollbar {
-  width: 0; /* Set the width of the scrollbar to 0 */
-  background: transparent; /* Make the background of the scrollbar transparent */
-}
 
 body .container .h-container {
     border-style: hidden;
