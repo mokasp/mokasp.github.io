@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+header {
+    border-style: hidden;
+    border-color: red;
+    width: 100%;
+    height: 2%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+body .container .h-container {
+    border-style: hidden;
+    border-color: green;
+    width: 100%;
+    height: 6%;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: -2%;
+}
+
+body .container .h-container h1 {
+    padding-left: 6%;
+    color: white;
+    font-size: 4vw;
+    position: absolute;
+}
+body .container .h-container .me {
+    border-style: dotted;
+    height: 5.3%;
+    width: auto;
+    border-radius: 50%;
+    border-color: white;
+    position: absolute;
+}
+
+body {
+    overflow: auto;
+    border-style: hidden;
+    border-color: blue;
+    background-color: white;
+    background-image: url('stars7.gif');
+    height: 150vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body .container {
+    overflow: auto;
+    border-style: hidden;
+    border-color: purple;
+    height:180vh;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    float: right;
+    position:sticky;
+    font-family: "VT323", monospace;
+
+}
+
+body .container .main {
+    overflow: auto;
+    border-style: hidden;
+    border-color: #CCD5AE;
+    box-shadow: -10px 10px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgb(200, 218, 184, 0.9);
+    height: 150vh;
+    width: 80vw;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-1%;
+}
+body .container .main .main-inner {
+    border-style: hidden;
+    border-color: purple;
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .container .h-container .buttons {
+    border-style: hidden;
+    border-color: purple;
+    width: 35vw;
+    height: 8vh;
+    margin-left: 46vw;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+body .container .main .main-inner .main-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+[class*="btn-glitch-"] {
+    display: flex;
+    font-family: "VT323", monospace;
+    font-size: 1vw;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 13px;
+    min-width: 6%;
+    line-height: 1.5em;
+    white-space: no-wrap;
+    margin: 2%;
+    text-transform: uppercase;
+    cursor: pointer;
+    .text,
+    .decoration {
+      display: inline-block;
+    }
+    .decoration {
+      display: inline-block;
+    }
+    &:hover, &:focus {
+      animation-name: glitch;
+      animation-duration: 0.2s;
+      background-color: rgb(26, 255, 0);
+      color:black;
+      border: 1px solid rgb(26, 255, 0);
+      .text-decoration {
+        animation-name: blink;
+        animation-duration: 0.1s;
+        animation-iteration-count: infinite;
+      }
+      .decoration {
+        animation-name: blink;
+        animation-duration: 0.1s;
+        animation-iteration-count: infinite;
+      }
+      :before {
+        content: " ";
+        width: 15px;
+        border: 1px solid black;
+        position: absolute;
+        right: 25%;
+        bottom: 3px;
+        transform: rotate(35deg)
+      }
+      :after {
+        animation-name: shrink;
+        animation-duration:.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode : forwards;
+        content: " ";
+        width: 75%;
+        border: 1px solid black;
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+      }
+    }
+    &:active {
+      background: none;
+      color:rgb(26, 255, 0);
+      .text-decoration {
+        animation-name: none;
+      }
+      .decoration {
+        animation-name: none;
+      }
+      :before, :after {
+        display: none;
+      }
+    }
+  }
+  
+  @keyframes glitch {
+    15% {
+        background-color: red;
+        transform: translateX(-10px);
+        letter-spacing: 5px;
+    }
+    49% {
+        opacity: 0;
+    }
+    70% {
+        background-color: blue;
+      }
+    100% {
+      background-color: rgb(26, 255, 0);
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes shrink {
+    100% {
+      width: 10%;
+    }
+  }
+  
