@@ -33,7 +33,7 @@ body .container .h-container h1 {
     position: absolute;
 }
 body .container .h-container .me {
-    border-style: dotted;
+    border-style: groove;
     height: 10%;
     width: auto;
     border-radius: 50%;

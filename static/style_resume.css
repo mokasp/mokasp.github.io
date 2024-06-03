@@ -12,6 +12,7 @@ header {
 a {
   text-decoration: none;
 }
+
 body .container .h-container {
     border-style: hidden;
     border-color: green;
@@ -33,7 +34,7 @@ body .container .h-container h1 {
     position: absolute;
 }
 body .container .h-container .me {
-    border-style: dotted;
+    border-style: groove;
     height: 5.3%;
     width: auto;
     border-radius: 50%;
